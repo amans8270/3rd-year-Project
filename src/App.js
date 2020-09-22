@@ -1,24 +1,16 @@
+import { Widgets } from '@material-ui/icons';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Feed from "./Components/Feed";
+import Sidebar from './Components/Sidebar';
+import Widget from "./Components/Widgets";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+     <Sidebar/>
+      <Feed/>
+      <Widget/>
     </div>
   );
 }
