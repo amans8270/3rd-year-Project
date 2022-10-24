@@ -13,8 +13,8 @@ function Tweetbox() {
 const sendTweet=e=>{
     e.preventDefault();
     db.collection('posts').add({
-        displayName:'Rahul',
-        username:"rahul999",
+        displayName:'Aman',
+        username:"Amans8270",
         verified:true,
         text:tweetMessage,
         image:tweetImage,
@@ -39,7 +39,7 @@ const sendTweet=e=>{
                 value={tweetImage}
                 onChange={e=>setTweetImage(e.target.value)} 
                 placeholder="Enter Image url" type="text"/>
-                <Button type="submit" onClick={sendTweet} className="tweetbox_button">Tweet</Button>
+                <Button type="submit" onClick={sendTweet} className="tweetbox_button">Push</Button>
             </form>
             
         </div>
